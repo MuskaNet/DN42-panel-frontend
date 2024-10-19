@@ -10,7 +10,7 @@ import pkg from '../package.json'
 export default {
     root: '/',
     package: `${pkg.name}/${pkg.version}`,
-    apiPrefix: 'https://api.dn42.muska.zip/dn42/peerapi',
+    apiPrefix: 'https://api.dn42.muska.zip',
     pingIntervalMs: 180000,
     configFallback: {
         netAsn: '4242423745',
