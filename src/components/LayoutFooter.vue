@@ -18,7 +18,7 @@ const currentYear = new Date().getFullYear()
 <template>
     <a-layout-footer id="footer" :class="themeName">
       <div class="md" v-if="siteConfig.footerText" v-html="md.render(siteConfig.footerText)"></div>
-      <p>&copy; {{currentYear}}&nbsp;&nbsp;<a href="https://dn42.dev" target="_blank" title="DN42 Wiki">DN42 Participant</a>&nbsp;&nbsp;{{siteConfig.netName}}({{siteConfig.netAsn}})</p>
+      <p>&copy; {{currentYear}} Muska Network. All rights reseved.</p>
     </a-layout-footer>
 </template>
 
