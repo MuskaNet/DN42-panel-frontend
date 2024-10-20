@@ -14,10 +14,6 @@ const t = useI18n().t
 const selectedKeys = ref<string[]>(['home'])
 
 const router = useRouter()
-const goHome = () => {
-    router.replace({ path: '/' })
-    window.scrollTo(0, 0)
-}
 const openNodesPage = () => {
     router.replace({ path: '/nodes' })
     window.scrollTo(0, 0)
@@ -96,12 +92,6 @@ const login = () => {
     <a-layout-header id="header" :class="themeName">
         <img class="logo" src="https://muska.zip/svg/logo.svg" @click="goHome" alt="Logo" />
         <a-menu :class="`menu ${themeName}`" @select="onSelect" :theme="themeName" mode="horizontal" v-model:selectedKeys="selectedKeys">
-            <a-menu-item key="home" @click="goHome">
-                <template #icon>
-                    <home-outlined />
-                </template>
-                {{ t('header.home') }}
-            </a-menu-item>
             <a-menu-item key="nodes" @click="openNodesPage">
                 <template #icon>
                     <global-outlined />
