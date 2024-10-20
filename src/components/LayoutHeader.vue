@@ -183,7 +183,6 @@ const login = () => {
   #header .logo {
     width: 80px !important;
     margin-right: 0px !important;
-    margin-block: 0.3rem;
   }
   #header:deep(.menu) {
     max-width: calc(100% - 80px) !important; /* 80px width of logo */
@@ -193,6 +192,7 @@ const login = () => {
     width: 100px;
     margin-right: 30px;
     cursor: pointer;
+    margin-block: 0.8rem;
 }
 #header:deep(.menu) {
     flex: 1 0 auto;
