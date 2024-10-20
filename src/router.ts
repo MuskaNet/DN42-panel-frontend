@@ -4,12 +4,7 @@ const pageRoutes: RouteRecordRaw[] = [
   {
     name: "index",
     path: "/",
-    component: () => import('./pages/posts/posts.vue')
-  },
-  {
-    name: "post",
-    path: "/post/:id",
-    component: () => import('./pages/posts/posts.vue')
+    redirect: { name: 'nodes' }
   },
   {
     name: "signin",
