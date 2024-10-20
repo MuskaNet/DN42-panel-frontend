@@ -30,7 +30,7 @@ export const refreshSiteConfig = async (t: (i18n: string) => string) => {
         footerText: footerText,
         maintenanceText: maintenanceText || config.configFallback.maintenanceText
       }
-      document.title = `${netName}(${netAsn}) - ${netDesc}`
+      document.title = `Muska Network DN42 Peering Panel - ${netDesc}`
       if (siteConfig.value.maintenanceText !== '') message.info(maintenanceText)
     }
   } catch (error) {
