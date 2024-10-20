@@ -90,7 +90,7 @@ const login = () => {
 
 <template>
     <a-layout-header id="header" :class="themeName">
-        <img class="logo" src="https://muska.zip/svg/logo.svg" @click="goHome" alt="Logo" />
+        <img class="logo" src="https://muska.zip/svg/logo.svg" alt="Logo" />
         <a-menu :class="`menu ${themeName}`" @select="onSelect" :theme="themeName" mode="horizontal" v-model:selectedKeys="selectedKeys">
             <a-menu-item key="nodes" @click="openNodesPage">
                 <template #icon>
